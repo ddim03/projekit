@@ -10,8 +10,14 @@ class Project extends Model
         'title',
         'slug',
         'description',
+        'image_path',
         'category_id'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 
     public function category()
     {
@@ -31,5 +37,10 @@ class Project extends Model
     public function tags()
     {
         return $this->belongsToMany(Tag::class, 'project_tags');
+    }
+
+    public function getLikesCountAttribute()
+    {
+        return $this->likes()->count();
     }
 }
