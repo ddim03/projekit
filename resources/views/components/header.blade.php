@@ -132,7 +132,7 @@
             @endauth
             @guest
             <a href="{{ route('login') }}"
-                class="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-gray-500 rounded gap-x-2 focus:outline-none disabled:opacity-50 disabled:pointer-events-none">
+                class="inline-flex items-center px-4 py-2 text-sm font-medium border border-gray-500 rounded dark:text-white gap-x-2 focus:outline-none disabled:opacity-50 disabled:pointer-events-none">
                 Login
                 <svg xmlns="http://www.w3.org/2000/svg" class="size-4" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
