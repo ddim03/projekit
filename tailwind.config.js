@@ -1,4 +1,7 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
+import aspectRatio from "@tailwindcss/aspect-ratio";
+import forms from "@tailwindcss/forms";
+import typography from "@tailwindcss/typography";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -9,12 +12,13 @@ export default {
         './resources/**/*.js',
         './resources/**/*.vue',
     ],
+    darkMode: "selector",
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: ["Inter", ...defaultTheme.fontFamily.sans],
             },
         },
     },
-    plugins: [],
+    plugins: [aspectRatio, forms, typography],
 };
