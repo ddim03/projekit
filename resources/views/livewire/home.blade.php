@@ -26,7 +26,7 @@
                 </h4>
                 <h5 class="mb-2">
                     <a href="javascript:void(0)"
-                        class="text-sm font-medium text-gray-500 transition hover:text-rose-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-rose-300">Into
+                        class="text-sm font-medium text-gray-500 transition hover:text-blue-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-blue-300">Into
                         The Wild</a>
                 </h5>
                 <p class="text-xs font-medium text-gray-500 dark:text-gray-400/75">
@@ -60,7 +60,7 @@
                 </h4>
                 <h5 class="mb-2">
                     <a href="javascript:void(0)"
-                        class="text-sm font-medium text-gray-500 transition hover:text-rose-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-rose-300">Nature
+                        class="text-sm font-medium text-gray-500 transition hover:text-blue-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-blue-300">Nature
                         Moments</a>
                 </h5>
                 <p class="text-xs font-medium text-gray-500 dark:text-gray-400/75">
@@ -94,7 +94,7 @@
                 </h4>
                 <h5 class="mb-2">
                     <a href="javascript:void(0)"
-                        class="text-sm font-medium text-gray-500 transition hover:text-rose-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-rose-300">Into
+                        class="text-sm font-medium text-gray-500 transition hover:text-blue-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-blue-300">Into
                         The Wild</a>
                 </h5>
                 <p class="text-xs font-medium text-gray-500 dark:text-gray-400/75">
@@ -128,7 +128,7 @@
                 </h4>
                 <h5 class="mb-2">
                     <a href="javascript:void(0)"
-                        class="text-sm font-medium text-gray-500 transition hover:text-rose-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-rose-300">Nature
+                        class="text-sm font-medium text-gray-500 transition hover:text-blue-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-blue-300">Nature
                         Moments</a>
                 </h5>
                 <p class="text-xs font-medium text-gray-500 dark:text-gray-400/75">
@@ -162,7 +162,7 @@
                 </h4>
                 <h5 class="mb-2">
                     <a href="javascript:void(0)"
-                        class="text-sm font-medium text-gray-500 transition hover:text-rose-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-rose-300">Nature
+                        class="text-sm font-medium text-gray-500 transition hover:text-blue-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-blue-300">Nature
                         Moments</a>
                 </h5>
                 <p class="text-xs font-medium text-gray-500 dark:text-gray-400/75">
@@ -196,7 +196,7 @@
                 </h4>
                 <h5 class="mb-2">
                     <a href="javascript:void(0)"
-                        class="text-sm font-medium text-gray-500 transition hover:text-rose-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-rose-300">Nature
+                        class="text-sm font-medium text-gray-500 transition hover:text-blue-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-blue-300">Nature
                         Moments</a>
                 </h5>
                 <p class="text-xs font-medium text-gray-500 dark:text-gray-400/75">
@@ -230,7 +230,7 @@
                 </h4>
                 <h5 class="mb-2">
                     <a href="javascript:void(0)"
-                        class="text-sm font-medium text-gray-500 transition hover:text-rose-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-rose-300">Nature
+                        class="text-sm font-medium text-gray-500 transition hover:text-blue-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-blue-300">Nature
                         Moments</a>
                 </h5>
                 <p class="text-xs font-medium text-gray-500 dark:text-gray-400/75">
@@ -264,7 +264,7 @@
                 </h4>
                 <h5 class="mb-2">
                     <a href="javascript:void(0)"
-                        class="text-sm font-medium text-gray-500 transition hover:text-rose-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-rose-300">Nature
+                        class="text-sm font-medium text-gray-500 transition hover:text-blue-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-blue-300">Nature
                         Moments</a>
                 </h5>
                 <p class="text-xs font-medium text-gray-500 dark:text-gray-400/75">
@@ -298,7 +298,7 @@
                 </h4>
                 <h5 class="mb-2">
                     <a href="javascript:void(0)"
-                        class="text-sm font-medium text-gray-500 transition hover:text-rose-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-rose-300">Into
+                        class="text-sm font-medium text-gray-500 transition hover:text-blue-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-blue-300">Into
                         The Wild</a>
                 </h5>
                 <p class="text-xs font-medium text-gray-500 dark:text-gray-400/75">
@@ -332,7 +332,7 @@
                 </h4>
                 <h5 class="mb-2">
                     <a href="javascript:void(0)"
-                        class="text-sm font-medium text-gray-500 transition hover:text-rose-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-rose-300">Animals
+                        class="text-sm font-medium text-gray-500 transition hover:text-blue-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-blue-300">Animals
                         Kingdom</a>
                 </h5>
                 <p class="text-xs font-medium text-gray-500 dark:text-gray-400/75">
@@ -366,7 +366,7 @@
                 </h4>
                 <h5 class="mb-2">
                     <a href="javascript:void(0)"
-                        class="text-sm font-medium text-gray-500 transition hover:text-rose-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-rose-300">Animals
+                        class="text-sm font-medium text-gray-500 transition hover:text-blue-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-blue-300">Animals
                         Kingdom</a>
                 </h5>
                 <p class="text-xs font-medium text-gray-500 dark:text-gray-400/75">
@@ -400,7 +400,7 @@
                 </h4>
                 <h5 class="mb-2">
                     <a href="javascript:void(0)"
-                        class="text-sm font-medium text-gray-500 transition hover:text-rose-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-rose-300">Animals
+                        class="text-sm font-medium text-gray-500 transition hover:text-blue-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-blue-300">Animals
                         Kingdom</a>
                 </h5>
                 <p class="text-xs font-medium text-gray-500 dark:text-gray-400/75">
@@ -434,7 +434,7 @@
                 </h4>
                 <h5 class="mb-2">
                     <a href="javascript:void(0)"
-                        class="text-sm font-medium text-gray-500 transition hover:text-rose-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-rose-300">Animals
+                        class="text-sm font-medium text-gray-500 transition hover:text-blue-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-blue-300">Animals
                         Kingdom</a>
                 </h5>
                 <p class="text-xs font-medium text-gray-500 dark:text-gray-400/75">
@@ -468,7 +468,7 @@
                 </h4>
                 <h5 class="mb-2">
                     <a href="javascript:void(0)"
-                        class="text-sm font-medium text-gray-500 transition hover:text-rose-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-rose-300">Animals
+                        class="text-sm font-medium text-gray-500 transition hover:text-blue-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-blue-300">Animals
                         Kingdom</a>
                 </h5>
                 <p class="text-xs font-medium text-gray-500 dark:text-gray-400/75">
@@ -502,7 +502,7 @@
                 </h4>
                 <h5 class="mb-2">
                     <a href="javascript:void(0)"
-                        class="text-sm font-medium text-gray-500 transition hover:text-rose-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-rose-300">Into
+                        class="text-sm font-medium text-gray-500 transition hover:text-blue-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-blue-300">Into
                         The Wild</a>
                 </h5>
                 <p class="text-xs font-medium text-gray-500 dark:text-gray-400/75">
@@ -536,7 +536,7 @@
                 </h4>
                 <h5 class="mb-2">
                     <a href="javascript:void(0)"
-                        class="text-sm font-medium text-gray-500 transition hover:text-rose-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-rose-300">Animals
+                        class="text-sm font-medium text-gray-500 transition hover:text-blue-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-blue-300">Animals
                         Kingdom</a>
                 </h5>
                 <p class="text-xs font-medium text-gray-500 dark:text-gray-400/75">
