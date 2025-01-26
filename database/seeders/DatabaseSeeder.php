@@ -79,6 +79,7 @@ class DatabaseSeeder extends Seeder
             // Create User Projects
             $project = Project::create([
                 'title' => fake()->sentence(4),
+                'image_path' => fake()->imageUrl(),
                 'slug' => fake()->slug(),
                 'description' => fake()->paragraph(),
                 'category_id' => random_int(1, 8),
