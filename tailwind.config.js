@@ -11,6 +11,7 @@ export default {
         './resources/**/*.blade.php',
         './resources/**/*.js',
         './resources/**/*.vue',
+        'node_modules/preline/dist/*.js',
     ],
     darkMode: "selector",
     theme: {
@@ -20,5 +21,5 @@ export default {
             },
         },
     },
-    plugins: [aspectRatio, forms, typography],
+    plugins: [aspectRatio, forms, typography, require('preline/plugin')],
 };
