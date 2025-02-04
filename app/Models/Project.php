@@ -2,10 +2,13 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Project extends Model
 {
+    use HasFactory;
+
     protected $fillable = [
         'title',
         'slug',
@@ -37,10 +40,5 @@ class Project extends Model
     public function tags()
     {
         return $this->belongsToMany(Tag::class, 'project_tags');
-    }
-
-    public function getLikesCountAttribute()
-    {
-        return $this->likes()->count();
     }
 }
