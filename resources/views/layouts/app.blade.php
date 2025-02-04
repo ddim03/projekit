@@ -26,6 +26,7 @@
     @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @endif
+    @livewireStyles
 </head>
 
 <body class="font-sans antialiased">
@@ -58,6 +59,7 @@
         <!-- END Footer -->
     </div>
     <!-- END Page Container -->
+    @livewireScripts
 </body>
 
 </html>
