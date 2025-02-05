@@ -41,28 +41,20 @@
     <div class="overflow-y-auto">
         <div class="w-full py-4">
             <nav class="space-y-1">
-                <a href="/"
-                    class="group flex items-center gap-2 border-r-4 border-blue-400 bg-blue-100 px-5 py-0.5 text-sm font-medium text-blue-900 dark:bg-blue-700 dark:text-blue-100">
-                    <span class="flex items-center flex-none opacity-75">
-                        <x-icon.home />
-                    </span>
-                    <span class="py-2 grow">Home</span>
-                </a>
-                <a href="/favorite"
-                    class="group flex items-center gap-2 px-5 py-0.5 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-900 active:bg-gray-50 dark:text-gray-200 dark:hover:bg-blue-700 dark:hover:text-blue-200">
-                    <span class="flex items-center flex-none opacity-75">
-                        <x-icon.heart />
-                    </span>
-                    <span class="py-2 grow">Favorite</span>
-                </a>
+                <x-navlink :active="request()->routeIs('home')" :href="route('home')" name="Home">
+                    <x-icon.home />
+                </x-navlink>
+                <x-navlink :active="request()->routeIs('favorite')" :href="route('favorite')" name="Favorite">
+                    <x-icon.heart />
+                </x-navlink>
                 @auth
-                <a href="/favorite"
-                    class="group flex items-center gap-2 px-5 py-0.5 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-900 active:bg-gray-50 dark:text-gray-200 dark:hover:bg-blue-700 dark:hover:text-blue-200">
-                    <span class="flex items-center flex-none opacity-75">
-                        <x-icon.archive />
-                    </span>
-                    <span class="py-2 grow">Your Projects</span>
-                </a>
+                @php
+                $username = auth()->user()->username;
+                $route = route('projects-by-user', $username);
+                @endphp
+                <x-navlink :active="request()->fullUrl() == $route" :href="$route" name="My Project">
+                    <x-icon.archive />
+                </x-navlink>
                 @endauth
                 <div class="px-5 pt-6 pb-2 text-xs font-medium tracking-wider text-gray-400 uppercase">
                     Category
@@ -71,13 +63,12 @@
                 $categories = \App\Models\Category::pluck('name', 'slug')->toArray();
                 @endphp
                 @foreach ($categories as $slug => $name)
-                <a href="{{ route('category', $slug) }}"
-                    class="group flex items-center gap-2 px-5 py-0.5 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-900 active:bg-gray-50 dark:text-gray-200 dark:hover:bg-blue-800 dark:hover:text-blue-200">
-                    <span class="flex items-center flex-none opacity-75">
-                        <x-icon.hashtag />
-                    </span>
-                    <span class="py-2 grow">{{ $name }}</span>
-                </a>
+                @php
+                $route = route('projets-by-category', $slug);
+                @endphp
+                <x-navlink :active="request()->fullUrl() == $route" :href="$route" :name="$name">
+                    <x-icon.hashtag />
+                </x-navlink>
                 @endforeach
             </nav>
         </div>
