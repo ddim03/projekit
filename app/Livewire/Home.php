@@ -11,9 +11,7 @@ class Home extends Component
     use WithPagination;
     public function render()
     {
-        $projects = Project::with('user:id,name', 'category:id,name')
-            ->withCount('likes')
-            ->orderBy('id', 'desc')
+        $projects = Project::withDetails()
             ->paginate(12)
             ->onEachSide(1);
         return view('livewire.home', ['projects' => $projects]);

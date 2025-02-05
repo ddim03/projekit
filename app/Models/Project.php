@@ -41,4 +41,11 @@ class Project extends Model
     {
         return $this->belongsToMany(Tag::class, 'project_tags');
     }
+
+    public function scopeWithDetails($query)
+    {
+        return $query->with('user:id,name', 'category:id,name')
+            ->withCount('likes')
+            ->orderBy('id', 'desc');
+    }
 }
