@@ -1,13 +1,16 @@
 <?php
 
 use App\Livewire\Home;
+use App\Livewire\ProjectsByCategory;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', Home::class)->name('home');
-Route::get('category/{slug}', function($slug) {
-    return;
-})->name('category');
-Route::get('tag/{slug}', function($slug) {
+
+Route::redirect('/category', '/');
+
+Route::get('/category/{slug}', ProjectsByCategory::class)->name('projets-by-category');
+
+Route::get('tag/{slug}', function ($slug) {
     return;
 })->name('tag');
 
