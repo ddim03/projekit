@@ -73,30 +73,27 @@ class DatabaseSeeder extends Seeder
                 'instagram' => 'https://instagram.com/dimasgda',
                 'linkedin' => 'https://linkedin.com/dimasgda'
             ]);
+        }
 
-            // Create User Projects
-            $project = Project::create([
-                'title' => fake()->sentence(4),
-                'image_path' => 'https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=350&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2NTA1MDQ4Ng&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=560',
-                'slug' => fake()->slug(),
-                'description' => fake()->paragraph(),
-                'category_id' => random_int(1, 8),
-                'user_id' => $user->id
-            ]);
+        // Create Project
+        Project::factory(1000)->create();
 
-            // Create Project Tags
+        $projects = Project::all();
+        foreach ($projects as $project) {
             $tags = Tag::inRandomOrder()->limit(3)->pluck('id');
+            $user = User::inRandomOrder()->first();
+            // Create Project Tags
             $project->tags()->attach($tags);
 
             // Create Project Likes
             $project->likes()->create([
-                'user_id' => $user->id
+                'user_id' => $user->id,
             ]);
 
             // Create Project Comments
             $project->comments()->create([
                 'user_id' => $user->id,
-                'content' => fake()->paragraph()
+                'content' => fake()->paragraph(),
             ]);
         }
     }

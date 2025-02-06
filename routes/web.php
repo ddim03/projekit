@@ -1,14 +1,18 @@
 <?php
 
+use App\Livewire\FavoriteProjects;
 use App\Livewire\Home;
-use App\Livewire\Register;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', Home::class)->name('home');
-Route::get('category/{slug}', function($slug) {
-    return;
-})->name('category');
-Route::get('tag/{slug}', function($slug) {
+
+Route::redirect('/category', '/');
+
+Route::get('/category/{slug}', ProjectsByCategory::class)->name('projets-by-category');
+
+Route::get('/project/favorite', FavoriteProjects::class)->name('favorite');
+
+Route::get('tag/{slug}', function ($slug) {
     return;
 })->name('tag');
 
