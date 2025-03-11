@@ -12,11 +12,11 @@ Route::redirect('/category', '/');
 
 Route::get('/category/{slug}', ProjectsByCategory::class)->name('projets-by-category');
 
-Route::get('/project/user', function () {
+Route::get('/project/{user}', function () {
     return;
 })->name('projects-by-user');
 
-Route::get('/project/favorite', FavoriteProjects::class)->name('favorite');
+Route::get('/favorite', FavoriteProjects::class)->name('favorite');
 
 Route::get('tag/{slug}', function ($slug) {
     return;
