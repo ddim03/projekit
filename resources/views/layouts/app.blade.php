@@ -1,4 +1,4 @@
-<x-layout.base>
+<x-layout.base :title="$title ?? null">
     <div id="page-container"
         class="mx-auto flex min-h-screen w-full min-w-[320px] flex-col bg-gray-100 transition-all duration-300 ease-out dark:bg-gray-800 dark:text-gray-200 lg:ps-64"
         x-bind:class="{ 'lg:ps-64': isSidebarOpen }">

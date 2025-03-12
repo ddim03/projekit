@@ -16,6 +16,7 @@ class FavoriteProjects extends Component
             ->paginate(12)
             ->onEachSide(1);
 
-        return view('livewire.project-list', ['projects' => $projects]);
+        return view('livewire.project-list', ['projects' => $projects])
+            ->title('Favorite');
     }
 }

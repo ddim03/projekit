@@ -9,7 +9,7 @@
                 <path d="M7 17 17 7" />
             </svg>
         </div>
-        <div class="aspect-h-10 aspect-w-16">
+        <div class="overflow-hidden aspect-h-10 aspect-w-15">
             <img src="{{ $project->image_path }}" alt="{{ $project->title }}" class="rounded" />
         </div>
     </a>
@@ -25,8 +25,7 @@
         </h4>
         <h5 class="mb-2">
             <a href="javascript:void(0)"
-                class="text-sm font-medium text-gray-500 transition hover:text-blue-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-blue-300">{{
-                $project->user->name }}</a>
+                class="text-sm font-medium text-gray-500 transition hover:text-blue-500 hover:underline hover:underline-offset-2 dark:text-gray-400 dark:hover:text-blue-300">{{ $project->user->name }}</a>
         </h5>
         <p class="text-xs font-medium text-gray-500 dark:text-gray-400/75">
             {{ $project->likes_count }} Likes • {{ $project->created_at->diffForHumans() }}
