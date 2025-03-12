@@ -19,7 +19,7 @@ class ProjectFactory extends Factory
     {
         return [
             'title' => fake()->sentence(4),
-            'image_path' => 'https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=350&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2NTA1MDQ4Ng&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=560',
+            'image_path' => 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             'slug' => fake()->slug(),
             'description' => fake()->paragraph(),
             'category_id' => random_int(1, 8),
