@@ -14,6 +14,6 @@ class Home extends Component
         $projects = Project::withDetails()
             ->paginate(12)
             ->onEachSide(1);
-        return view('livewire.home', ['projects' => $projects]);
+        return view('livewire.project-list', ['projects' => $projects]);
     }
 }
