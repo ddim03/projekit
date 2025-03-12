@@ -78,77 +78,74 @@
         <!-- Right Section -->
         <div class="flex items-center gap-2">
             @auth
-            <!-- User Dropdown -->
-            <div class="relative inline-block">
-                <!-- Dropdown Toggle Button -->
-                <button type="button"
-                    class="inline-flex items-center justify-center px-3 py-2 text-sm font-semibold leading-5 text-gray-800 bg-white border border-gray-300 rounded shadow-sm hover:border-gray-300 hover:bg-gray-100 hover:text-gray-800 hover:shadow focus:outline-none focus:ring focus:ring-gray-500/25 active:border-white active:bg-white active:shadow-none dark:border-gray-700/75 dark:bg-gray-900 dark:text-gray-200 dark:hover:border-gray-700 dark:hover:bg-gray-800 dark:hover:text-gray-200 dark:focus:ring-gray-700 dark:active:border-gray-900 dark:active:bg-gray-900"
-                    id="tk-dropdown-layouts-user" aria-haspopup="true" x-bind:aria-expanded="userDropdownOpen"
-                    x-on:click="userDropdownOpen = true">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                        class="inline-block w-5 h-5 hi-solid hi-user-circle sm:hidden">
-                        <path fill-rule="evenodd"
-                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-5.5-2.5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zM10 12a5.99 5.99 0 00-4.793 2.39A6.483 6.483 0 0010 16.5a6.483 6.483 0 004.793-2.11A5.99 5.99 0 0010 12z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <span class="hidden sm:inline">{{ auth()->user()->name }}</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                        class="hidden w-5 h-5 opacity-50 hi-solid hi-chevron-down ms-1 sm:inline-block">
-                        <path fill-rule="evenodd"
-                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </button>
-                <!-- END Dropdown Toggle Button -->
+                <!-- User Dropdown -->
+                <div class="relative inline-block">
+                    <!-- Dropdown Toggle Button -->
+                    <button type="button"
+                        class="inline-flex items-center justify-center px-3 py-2 text-sm font-semibold leading-5 text-gray-800 bg-white border border-gray-300 rounded shadow-sm hover:border-gray-300 hover:bg-gray-100 hover:text-gray-800 hover:shadow focus:outline-none focus:ring focus:ring-gray-500/25 active:border-white active:bg-white active:shadow-none dark:border-gray-700/75 dark:bg-gray-900 dark:text-gray-200 dark:hover:border-gray-700 dark:hover:bg-gray-800 dark:hover:text-gray-200 dark:focus:ring-gray-700 dark:active:border-gray-900 dark:active:bg-gray-900"
+                        id="tk-dropdown-layouts-user" aria-haspopup="true" x-bind:aria-expanded="userDropdownOpen"
+                        x-on:click="userDropdownOpen = true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="inline-block w-5 h-5 hi-solid hi-user-circle sm:hidden">
+                            <path fill-rule="evenodd"
+                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-5.5-2.5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zM10 12a5.99 5.99 0 00-4.793 2.39A6.483 6.483 0 0010 16.5a6.483 6.483 0 004.793-2.11A5.99 5.99 0 0010 12z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="hidden sm:inline">{{ auth()->user()->name }}</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="hidden w-5 h-5 opacity-50 hi-solid hi-chevron-down ms-1 sm:inline-block">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <!-- END Dropdown Toggle Button -->
 
-                <!-- Dropdown -->
-                <div x-cloak x-show="userDropdownOpen" x-transition:enter="transition ease-out duration-150"
-                    x-transition:enter-start="opacity-0 scale-75" x-transition:enter-end="opacity-100 scale-100"
-                    x-transition:leave="transition ease-in duration-100"
-                    x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-75"
-                    x-on:click.outside="userDropdownOpen = false" role="menu" aria-labelledby="tk-dropdown-layouts-user"
-                    class="absolute w-48 mt-2 rounded shadow-xl z-1 end-0 ltr:origin-top-right rtl:origin-top-left">
-                    <div
-                        class="bg-white divide-y divide-gray-100 rounded ring-1 ring-black/5 dark:divide-gray-700 dark:bg-gray-900 dark:ring-gray-700">
-                        <div class="p-2 space-y-1">
-                            <a role="menuitem" href="javascript:void(0)"
-                                class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-600 rounded hover:bg-gray-100 hover:text-gray-700 focus:bg-gray-100 focus:text-gray-700 focus:outline-none dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-gray-100 dark:focus:bg-gray-800 dark:focus:text-gray-100">
-                                <span>Settings</span>
-                            </a>
-                        </div>
-                        <div class="p-2 space-y-1">
-                            <form onsubmit="return false;">
-                                <button type="submit" role="menuitem"
-                                    class="flex items-center w-full gap-2 px-3 py-2 text-sm font-medium text-gray-600 rounded text-start hover:bg-gray-100 hover:text-gray-700 focus:bg-gray-100 focus:text-gray-700 focus:outline-none dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-gray-100 dark:focus:bg-gray-800 dark:focus:text-gray-100">
-                                    <span>Sign out</span>
-                                </button>
-                            </form>
+                    <!-- Dropdown -->
+                    <div x-cloak x-show="userDropdownOpen" x-transition:enter="transition ease-out duration-150"
+                        x-transition:enter-start="opacity-0 scale-75" x-transition:enter-end="opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-100"
+                        x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-75"
+                        x-on:click.outside="userDropdownOpen = false" role="menu"
+                        aria-labelledby="tk-dropdown-layouts-user"
+                        class="absolute w-48 mt-2 rounded shadow-xl z-1 end-0 ltr:origin-top-right rtl:origin-top-left">
+                        <div
+                            class="bg-white divide-y divide-gray-100 rounded ring-1 ring-black/5 dark:divide-gray-700 dark:bg-gray-900 dark:ring-gray-700">
+                            <div class="p-2 space-y-1">
+                                <a role="menuitem" href="javascript:void(0)"
+                                    class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-600 rounded hover:bg-gray-100 hover:text-gray-700 focus:bg-gray-100 focus:text-gray-700 focus:outline-none dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-gray-100 dark:focus:bg-gray-800 dark:focus:text-gray-100">
+                                    <span>Settings</span>
+                                </a>
+                            </div>
+                            @livewire('logout')
                         </div>
                     </div>
+                    <!-- END Dropdown -->
                 </div>
-                <!-- END Dropdown -->
-            </div>
-            <!-- END User Dropdown -->
+                <!-- END User Dropdown -->
             @endauth
             @guest
-            <a href="{{ route('login') }}"
-                class="inline-flex items-center px-3 py-2 text-sm text-white bg-blue-700 hover:bg-blue-700/90 transition-all duration-200 rounded gap-x-1.5 focus:outline-none disabled:opacity-50 disabled:pointer-events-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-4" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
-                    <polyline points="10 17 15 12 10 7" />
-                    <line x1="15" x2="3" y1="12" y2="12" />
-                </svg>
-            </a>
-            <a href="{{ route('register') }}"
-                class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-700 border border-transparent rounded gap-x-2 focus:outline-none disabled:opacity-50 disabled:pointer-events-none">
-                Register
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-4" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="8" r="5" />
-                    <path d="M20 21a8 8 0 0 0-16 0" />
-                </svg>
-            </a>
+                <a href="{{ route('login') }}" wire:navigate
+                    class="inline-flex items-center px-4 py-2 text-sm font-medium border border-gray-500 rounded dark:text-white gap-x-2 focus:outline-none disabled:opacity-50 disabled:pointer-events-none">
+                    Login
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-4" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-log-in">
+                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+                        <polyline points="10 17 15 12 10 7" />
+                        <line x1="15" x2="3" y1="12" y2="12" />
+                    </svg>
+                </a>
+                <a href="{{ route('register') }}" wire:navigate
+                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-700 border border-transparent rounded gap-x-2 focus:outline-none disabled:opacity-50 disabled:pointer-events-none">
+                    Register
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-4" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-user-round">
+                        <circle cx="12" cy="8" r="5" />
+                        <path d="M20 21a8 8 0 0 0-16 0" />
+                    </svg>
+                </a>
             @endguest
         </div>
         <!-- END Right Section -->
